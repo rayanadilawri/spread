@@ -18,3 +18,9 @@ body {
 h1{
 	font-size: calc(var(--root-size)*2);
 }
+
+@media print {
+	:root {
+		--root-size: 1rem;
+	}
+}
