@@ -1,0 +1,20 @@
+h1 {
+	font-size: calc(var(--root-size)*2);
+}
+
+body {
+	font-size: var(--root-size);
+	padding: var(--root-size);
+}
+
+@media (min-width: 600px) {
+	:root {
+		--root-size: 1.5rem;
+	}
+}
+
+@media print {
+	:root {
+		--root-size: 1rem;
+	}
+}
