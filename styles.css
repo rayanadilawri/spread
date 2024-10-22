@@ -22,13 +22,14 @@ li {
 	border-right: 2px solid firebrick;
 	padding: 5px;
 }
-ol {
+
+ol, footer {
 	display: flex;
 	flex-wrap: wrap;
 	height: 120px;
 }
 
-ol {
+ol, footer {
 	justify-content: space-between;
 	align-content: space-between;
 	gap: 10px; /* No effect, here! */
@@ -53,7 +54,7 @@ h2{
 	font-size: 50px;
 }
 
-.name, .author, .date {
+.name, .author, .date, footer {
 	font-family: "Staatliches", sans-serif;
 	font-weight: 400;
 	font-style: normal;
