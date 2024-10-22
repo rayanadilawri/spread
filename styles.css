@@ -68,6 +68,7 @@ section {
 	font-optical-sizing: auto;
 	font-weight: <weight>;
 	font-style: normal;
+	width: max(22rem); 
 }
 
 blockquote{
@@ -107,5 +108,6 @@ ul {
 @media print {
 	:root {
 		--root-size: 1rem;
+	section: width: min(60%); 
 	}
 }
