@@ -10,6 +10,27 @@ body {
 }
 
 
+ol { background-color: gold; }
+
+ol:not(:first-child) { margin-top: 20px; }
+
+li {
+	background-color: tomato;
+	border-bottom: 2px solid firebrick;
+	border-right: 2px solid firebrick;
+	padding: 5px;
+}
+ol {
+	display: flex;
+	flex-wrap: wrap;
+	height: 120px;
+}
+
+ol {
+	justify-content: space-between;
+	align-content: space-between;
+	gap: 10px; /* No effect, here! */
+}
 h1{
 	/*font-size: calc(var(--root-size)*2);*/
 	font-family: "Staatliches", sans-serif;
