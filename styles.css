@@ -36,6 +36,7 @@ ol {
 	align-content: space-between;
 	gap: 10px; /* No effect, here! */
 }
+
 h1{
 	/*font-size: calc(var(--root-size)*2);*/
 	font-family: "Staatliches", sans-serif;
@@ -59,13 +60,22 @@ h2{
 	
 }
 
+.name {
+	align-items: right;
+	padding-left: 50px;
+   }
+
+section {
+	font-family: "Space Grotesk", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: <weight>;
+	font-style: normal;
+}
+
 blockquote{
 	align-items: center;
 	text-transform: uppercase;
-}
-.name {
- align-items: right;
- padding-left: 50px;
+	font-family: "Staatliches", sans-serif;
 }
 
 li {
