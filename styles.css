@@ -8,8 +8,12 @@ body {
 	/*font-size: var(--root-size);*/
 	/*padding: var(--root-size);*/
 	max-width:
+	padding: var(--root-size);
+	margin-left: 20px;
+	margin-right: 20px;
 }
 
+article
 
 ol { background-color: white; }
 
@@ -40,9 +44,12 @@ h1{
 	font-size: 200px;
 	margin-top: 50px;
 	line-height: 170px;
-	font-size: calc(var(--root-size) * 10);
+	font-size: calc(var(--root-size) * 8);
 	}
 
+h2{
+	align-items: left;
+}
 
 .name, .author, .date {
 	font-family: "Staatliches", sans-serif;
@@ -52,6 +59,10 @@ h1{
 	
 }
 
+blockquote{
+	align-items: center;
+	text-transform: uppercase;
+}
 .name {
  align-items: right;
  padding-left: 50px;
@@ -70,6 +81,13 @@ ul {
 
 .author {
 
+}
+
+.responsive-row {
+	margin-top: vR(--root-size);
+	display:flex;
+	flex-direction:column;
+	gap: var(--root-size);
 }
 
 @media (min-width: 600px) 
