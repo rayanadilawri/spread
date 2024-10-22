@@ -40,7 +40,8 @@ h1{
 	font-size: 200px;
 	margin-top: 50px;
 	line-height: 170px;
-	  }
+	font-size: calc(var(--root-size) * 10);
+	}
 
 
 .name, .author, .date {
@@ -71,7 +72,7 @@ ul {
 
 }
 
-@media (min-width: 600px) {
+@media (min-width: 600px) 
 	:root {
 		--root-size: 1.5rem;
 	}
