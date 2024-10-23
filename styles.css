@@ -116,3 +116,42 @@ ul {
 	section: width: min(60%); 
 	}
 }
+
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 10px;
+	grid-auto-rows: minmax(100px, auto);
+  }
+
+  .one {
+grid-column: 1; /* Spans all 3 columns */
+  grid-row: 1;
+  background-color: blue; /* Background of the header */
+  padding: 20px;
+  text-align: center;
+  }
+  
+  .two {
+grid-column: 2 ; /* Spans all 3 columns */
+  grid-row: 1;
+  background-color: red; /* Background of the header */
+  padding: 20px;
+  text-align: center;
+  }
+
+  .blank {
+	grid-column: 3 ; /* Spans all 3 columns */
+	  grid-row: 1;
+	  background-color: white; /* Background of the header */
+	  padding: 20px;
+	  text-align: center;
+	  }
+
+.three {
+		grid-column: 4 ; /* Spans all 3 columns */
+		  grid-row: 1;
+		  background-color: yellow; /* Background of the header */
+		  padding: 20px;
+		  text-align: center;
+		  }
