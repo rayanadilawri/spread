@@ -158,3 +158,11 @@ grid-column: 2 ; /* Spans all 3 columns */
 	padding: 20px;
 	text-align: center;
 	border: 2px solid black;}
+
+	.five {
+		grid-column:  1 / -1; /* Spans all 3 columns */
+		grid-row: 3;
+		background-color: white; /* Background of the header */
+		padding: 20px;
+		text-align: ;eft;
+		border: 2px solid black;}
