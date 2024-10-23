@@ -120,12 +120,11 @@ ul {
 .wrapper {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	gap: 10px;
-	grid-auto-rows: minmax(100px, auto);
+	grid-auto-rows: minmax(50px, auto);
   }
 
   .one {
-grid-column: 1; /* Spans all 3 columns */
+  grid-column: 1; /* Spans all 3 columns */
   grid-row: 1;
   background-color: blue; /* Background of the header */
   padding: 20px;
@@ -155,3 +154,10 @@ grid-column: 2 ; /* Spans all 3 columns */
 		  padding: 20px;
 		  text-align: center;
 		  }
+
+.four {
+	grid-column: 1 ; /* Spans all 3 columns */
+	grid-row: 2;
+	background-color: yellow; /* Background of the header */
+	padding: 20px;
+	text-align: center;}
