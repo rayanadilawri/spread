@@ -119,7 +119,7 @@ ul {
 
 .wrapper {
 	display: grid;
-	grid-template-columns: repeat(4, 1fr);
+	grid-template-columns: repeat(3, 1fr);
 	grid-auto-rows: minmax(50px, auto);
   }
 
@@ -129,6 +129,7 @@ ul {
   background-color: blue; /* Background of the header */
   padding: 20px;
   text-align: center;
+  border: 2px solid black;
   }
   
   .two {
@@ -137,27 +138,23 @@ grid-column: 2 ; /* Spans all 3 columns */
   background-color: red; /* Background of the header */
   padding: 20px;
   text-align: center;
+  border: 2px solid black;
   }
 
-  .blank {
-	grid-column: 3 ; /* Spans all 3 columns */
-	  grid-row: 1;
-	  background-color: white; /* Background of the header */
-	  padding: 20px;
-	  text-align: center;
-	  }
 
 .three {
-		grid-column: 4 ; /* Spans all 3 columns */
+		grid-column: 3 ; /* Spans all 3 columns */
 		  grid-row: 1;
 		  background-color: yellow; /* Background of the header */
 		  padding: 20px;
 		  text-align: center;
+		  border: 2px solid black;
 		  }
 
 .four {
-	grid-column: 1 ; /* Spans all 3 columns */
+	grid-column:  1 / -1; /* Spans all 3 columns */
 	grid-row: 2;
-	background-color: yellow; /* Background of the header */
+	background-color: white; /* Background of the header */
 	padding: 20px;
-	text-align: center;}
+	text-align: center;
+	border: 2px solid black;}
