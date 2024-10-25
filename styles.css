@@ -47,10 +47,9 @@ h1{
 	font-family: "Staatliches", sans-serif;
 	font-weight: 400;
 	font-style: normal;
-	font-size: 5px;
 	margin-top: 50px;
-	line-height: 170px;
-	font-size: calc(var(--root-size) * 8);
+	line-height: calc(var(--root-size) * 10);
+	font-size: calc(var(--root-size) * 10);
 	}
 
 h2, .Read more; {
@@ -172,6 +171,11 @@ footer {
 	:root {
 		--root-size: 1.5rem;
 	}
+
+	h1 {
+	line-height: calc(var(--root-size) * 5);
+	font-size: calc(var(--root-size) * 5);
+		}
 
 	.grid-item, .left, #quote1, #quote2, .right, .blue {
 		grid-column: 1 / span 5;
