@@ -12,6 +12,13 @@
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Staatliches&display=swap" rel="stylesheet">
             <title>Spread </title>
+            <!--< this script thing undernaeth is for printing - keep it in --> 
+            <script>
+                const toggleDetails = open => document.querySelectorAll('details').forEach(details => details.open = open)
+            
+                window.addEventListener('beforeprint', () => toggleDetails(true))
+                window.addEventListener('afterprint', () => toggleDetails(false))
+            </script>
         </head> 
         
         <body>
