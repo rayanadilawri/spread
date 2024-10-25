@@ -109,7 +109,7 @@ ul {
 
 .wrapper {
 	display: grid; 
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(4, 1fr);
 	grid-auto-rows: minmax(50px, auto);
 }
 
@@ -122,11 +122,15 @@ ul {
 
 .grid-items {
 	padding: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .left{
 	grid-column: 1 / span 3;
 	border: black 3px solid;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 #quote1 {
@@ -142,10 +146,12 @@ ul {
 .right {
 	grid-column: 3 / span 3; 
 	border: black 3px solid;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .blue {
-	background-color: blue;
+	background-color: #006AB3;
 }
 
 footer {
@@ -157,7 +163,7 @@ footer {
 		--root-size: 1.5rem;
 	}
 
-	.grid-item, .left, #quote1, .right, .blue {
+	.grid-item, .left, #quote1, #quote2, .right, .blue {
 		grid-column: 1 / span 5;
 	}
 	
