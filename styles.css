@@ -115,9 +115,13 @@ ul {
 
 left {
 	grid-column: 1 / span 3;
-	border: black;
+	border: black 3px solid;
 }
 
+#quote1 {
+	grid-column: 4 / span 2; 
+	border: black 3px solid; 
+}
 .wrapper{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -136,6 +140,7 @@ grid-items {
 	padding: 20px;
 }
 
+
 @media (min-width: 600px) 
 	:root {
 		--root-size: 1.5rem;
@@ -151,6 +156,11 @@ grid-items {
 footer {
 	margin: 0;
 	}
+
+.grid-item, .left, #quote1, .right, .blue {
+	grid-column: 1 / span 5;
+}
+
 
 /*.one {
 	grid-column: 1; 
