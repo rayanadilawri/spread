@@ -39,7 +39,7 @@ ol, footer {
 ol, footer {
 	justify-content: space-between;
 	align-content: space-between;
-	gap: 10px; /* No effect, here! */
+	/* gap: 10px; No effect, here! */
 }
 
 h1{
@@ -57,7 +57,7 @@ h1{
 	}
 
 h2, .Read more; {
-	align-items: left;
+	justify-items: left;
 	font-family: "Staatliches", sans-serif;
 	font-weight: 400;
 	font-style: normal;
@@ -91,7 +91,7 @@ blockquote{
 	font-family: "Staatliches", sans-serif;
 	font-weight: 400;
 	font-style: normal;
-	font-size: 30px; 
+	font-size: 50px; 
 }
 
 li {
@@ -188,8 +188,9 @@ ul {
 
 .blank blue 
 { 
-	grid-column: 1, 2, 3 / span 2; 
+	grid-column: 1fr 6fr; 
 }
+
 .blue {
 	background-color: #006AB3;
 }
@@ -222,9 +223,15 @@ footer {
 	font-size: calc(var(--root-size) * 5);
 		}
 
+	blockquote {
+		line-height: calc(var(--root-size) * 1);
+		font-size: calc(var(--root-size) * 1);	
+	}
+
 	.grid-item, .left, #quote1, #quote2, .right, .blue {
 		grid-column: 1 / span 5;
 	}
+
 	
 @media print {
 	:root {
