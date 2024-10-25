@@ -122,7 +122,7 @@ ul {
 	grid-auto-rows: minmax(50px, auto);
 }
 
-.grid-container {
+.grid-container, .grid-container03 {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	grid-template-rows: auto;
@@ -131,7 +131,7 @@ ul {
 
 .grid-container02 {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-rows: auto;
 	border: black 3px solid;
 }
@@ -161,19 +161,19 @@ ul {
 }
 
 #quote3 {
-	grid-column: 1 / span 1;
+	grid-column: 1 / span 2;
 	border: black 3px solid;
 	box-align: left;
 }
 
 #quote4 {
-	grid-column: 2 / span 1;
+	grid-column: 1 / span 1;
 	border: black 3px solid;
 	box-align: right;
 }
 
 #quote5 {
-	grid-column: 1 / span 1;
+	grid-column: 3 / span 2;
 	border: black 3px solid;
 	box-align: left;
 }
@@ -186,12 +186,20 @@ ul {
 	padding-right: 10px;
 }
 
+.blank blue 
+{ 
+	grid-column: 1, 2, 3 / span 2; 
+}
 .blue {
 	background-color: #006AB3;
 }
 
 .red {
 	background-color: #DF1617;
+}
+
+.yellow {
+	background-color: #FFD301;
 }
 
 header {
