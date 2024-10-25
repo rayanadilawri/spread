@@ -124,14 +124,14 @@ ul {
 
 .grid-container, .grid-container03 {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-columns: repeat(5, 1fr);
 	grid-template-rows: auto;
 	border: black 3px solid;
 }
 
 .grid-container02 {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: auto;
 	border: black 3px solid;
 }
