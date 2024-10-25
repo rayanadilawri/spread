@@ -1,6 +1,7 @@
 :root {
 	--root-size:  1.2rem;
 	--fg-color: #000;
+	font-size: 17px;
 }
 
 body {
@@ -99,13 +100,12 @@ ul {
 }
 
 
-.responsive-row {
+.responsive-row{
 	margin-top: vR(--root-size);
 	display:flex;
 	flex-direction:column;
 	gap: var(--root-size);
 }
-
 
 .wrapper {
 	display: grid; 
@@ -148,12 +148,19 @@ ul {
 	background-color: blue;
 }
 
+footer {
+	margin: 0;
+	}
 
 @media (max-width: 600px) {
 	:root {
 		--root-size: 1.5rem;
 	}
 
+	.grid-item, .left, #quote1, .right, .blue {
+		grid-column: 1 / span 5;
+	}
+	
 @media print {
 	:root {
 		--root-size: 1rem;
@@ -161,13 +168,7 @@ ul {
 	}
 }
 
-footer {
-	margin: 0;
-	}
 
-.grid-item, .left, #quote1, .right, .blue {
-	grid-column: 1 / span 5;
-}
 
 
 /*.one {
