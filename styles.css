@@ -122,6 +122,11 @@ ul {
 	grid-template-columns: repeat (3, 1fr);
 	grid-auto-rows: minmax(50px, auto);
 }
+
+grid-items {
+	padding: 20px;
+}
+
 .grid-container {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
