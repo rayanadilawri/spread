@@ -11,6 +11,12 @@ body {
 	padding: var(--root-size);
 	margin-left: 20px;
 	margin-right: 20px;
+	font-family: "Space Grotesk", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: normal;
+	font-style: normal;
+	/*width: max(22rem);*/ 
+
 }
 
 ol { background-color: white; }
