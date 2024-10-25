@@ -129,10 +129,18 @@ ul {
 	border: black 3px solid;
 }
 
+.grid-container02 {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+	border: black 3px solid;
+}
+
 .grid-items {
 	padding: 20px;
 	padding-left: 10px;
 	padding-right: 10px;
+	border: black 3px solid;
 }
 
 .left{
@@ -151,6 +159,25 @@ ul {
 	grid-column: 1 / span 2;
 	border: black 3px solid;
 }
+
+#quote3 {
+	grid-column: 1 / span 1;
+	border: black 3px solid;
+	box-align: left;
+}
+
+#quote4 {
+	grid-column: 2 / span 1;
+	border: black 3px solid;
+	box-align: right;
+}
+
+#quote5 {
+	grid-column: 1 / span 1;
+	border: black 3px solid;
+	box-align: left;
+}
+
 
 .right {
 	grid-column: 3 / span 3; 
