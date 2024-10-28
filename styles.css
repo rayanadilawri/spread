@@ -56,15 +56,15 @@ h1{
 	padding-right: 10px;
 	}
 
-h2, .Read more; {
+h2, .read-more {
 	justify-items: left;
-	font-family: "Staatliches", sans-serif;
+	/* font-family: "Staatliches", sans-serif;
 	font-weight: 400;
-	font-style: normal;
+	font-style: normal; */
 	font-size: 50px;
 }
 
-.name, .author, .date, footer {
+.name, .author, .date, footer, h2, .read-more {
 	font-family: "Staatliches", sans-serif;
 	font-weight: 400;
 	font-style: normal;
@@ -82,7 +82,7 @@ section {
 	font-optical-sizing: auto;
 	font-weight: <weight>;
 	font-style: normal;
-	width: max(22rem); 
+	max-width: 22rem; 
 }
 
 blockquote{
@@ -186,9 +186,11 @@ ul {
 	padding-right: 10px;
 }
 
-.blank blue 
+#blank blue 
 { 
-	grid-column: 1fr 6fr; 
+	/*grid-column: 1fr 6fr;*/ 
+	grid-row: 1 / span 3;
+    grid-column: 4 / span 2;
 }
 
 .blue {
