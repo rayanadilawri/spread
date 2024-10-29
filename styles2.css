@@ -8,19 +8,19 @@ body {
     "black"
     "h2"
     "body1"
-    "yellow"
     "body2"
     "quote1"
     "body3"
     "body-yellow"
     "quote2"
     "body4"
+    "body5"
     "quote3"
     "quote4"
     "quote5"
-    "body5"
     "body6"
     "body7"
+    "body8"
     "read-more"
     "footer";
     background-color: black;
@@ -71,6 +71,25 @@ blockquote {
     grid-area: quote2;
     background-color: #DF1617;
 }
+
+.body1 {
+    grid-area: body1;
+}
+
+.yellow {
+    grid-area: body-yellow;
+    background-color: #FFD301;
+}
+
+.body2 {
+    grid-area: quote2;
+}
+
+.body4 {
+    grid-area: body4;
+}
+
+
 
 @media (min-width: 600px) {
     body {
