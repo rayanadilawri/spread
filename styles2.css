@@ -28,6 +28,20 @@ body {
     margin: 5px;
 }
 
+blockquote, header, h1, h2, .ReadMore, footer {
+font-family: "Staatliches", sans-serif;
+font-weight: 400;
+font-style: normal;;
+}
+
+p {
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+	font-weight: normal;
+	font-style: normal;
+}
+
+
 header {
     grid-area: header;
 }
@@ -125,10 +139,16 @@ footer {
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: auto;
         grid-template-areas: 
-        "header header header header header header header header header header header header "
-        "h2 h2 h2 h2 h2 h2 h2 h2 black black black black"
-        "body body body body body body body body quote1 quote1 quote1 quote1"
-        "yellow yellow yellow yellow yellow body body body body body body body"
+        "header header header header header header header header header header header header"
+        "h1 h1 h1 h1 h1 h1 h1 h1 black black black black"
+        "h2 h2 h2 h2 h2 h2 h2 h2"
+        "body1 body1 body1 body1 body1 body1 body1 body1 quote1 quote1 quote1 quote1"
+        "body2 body2 body2 body2 body2 body2 body2 body2 quote2 quote2 quote2 quote2"
+        "body-yellow";
+    }
+}
+
+      /*  "yellow yellow yellow yellow yellow body body body body body body body"
         "quote2 quote2 quote2 quote2 quote2 body body body body body body body"
         "red red red red red body body body body body body body"
         "quote3 quote3 quote3 quote3 quote3 quote3 blank blank blank blank blank blank"
@@ -138,5 +158,5 @@ footer {
         "body body body body body body body blue blue blue blue"
         "body body body body body body body blue blue blue blue"
         "read-more read-more read-more read-more read-more read-more read-more read-more black black black black"
-        "footer1 footer1 footer1 footer1 footer1 footer2 footer2 footer2 footer2 footer3 footer3 footer3";
-    }
+        "footer1 footer1 footer1 footer1 footer1 footer2 footer2 footer2 footer2 footer3 footer3 footer3"; */
+
