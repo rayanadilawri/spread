@@ -1,6 +1,6 @@
 body {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1fr);
     grid-template-rows: 100px 65vh 100px;
     grid-template-areas: 
     "header"
@@ -23,12 +23,34 @@ body {
     "body"
     "read-more"
     "footer";
+    background-color: black;
+    gap: 5px;
+    margin: 5px;
 }
 
 header {
     grid-area: header;
-    background-color: pink;
 }
+
+.black {
+    grid-area: black;
+    height: 6rem;
+    background-color: black;
+}
+
+h2 {
+    gap: 5px;
+}
+section {
+    grid-area: body;
+    border: solid 3px black;
+}
+
+section, div, header, h1, h2 {
+    background-color: white;
+    margin: 0;
+}
+
 @media (min-width: 600px) {
     body {
         display: grid;
