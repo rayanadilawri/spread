@@ -89,6 +89,34 @@ blockquote {
     grid-area: body4;
 }
 
+.quote3 {
+    grid-area: quote3;
+    background-color: #006AB3;
+}
+
+.quote4 {
+    grid-area: quote4;
+    background-color: #FFD301;
+}
+
+.quote5 {
+    grid-area: quote5;   
+}
+
+.body6 {
+    grid-area: body6;
+}
+
+.ReadMore {
+    grid-area: read-more;
+
+}
+
+footer {
+    grid-area: footer;
+    background-color: white;
+}
+
 
 
 @media (min-width: 600px) {
