@@ -51,6 +51,19 @@ section, div, header, h1, h2 {
     margin: 0;
 }
 
+blockquote {
+    margin: 0;
+    background-color: white;
+    font-size: 2rem;
+    border: solid 3px black;
+    padding: 1rem;
+}
+
+.quote1 {
+    grid-area: quote1;
+    background-color: #006AB3;
+}
+
 @media (min-width: 600px) {
     body {
         display: grid;
