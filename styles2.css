@@ -7,20 +7,20 @@ body {
     "h1"
     "black"
     "h2"
-    "body"
+    "body1"
     "yellow"
-    "body"
+    "body2"
     "quote1"
-    "body"
+    "body3"
     "body-yellow"
     "quote2"
-    "body"
+    "body4"
     "quote3"
     "quote4"
     "quote5"
-    "body"
-    "body"
-    "body"
+    "body5"
+    "body6"
+    "body7"
     "read-more"
     "footer";
     background-color: black;
@@ -40,10 +40,13 @@ header {
 
 h2 {
     gap: 5px;
+    grid-area: h2;
 }
+
 section {
     grid-area: body;
     border: solid 3px black;
+    padding: 1rem;
 }
 
 section, div, header, h1, h2 {
@@ -62,6 +65,11 @@ blockquote {
 .quote1 {
     grid-area: quote1;
     background-color: #006AB3;
+}
+
+.quote2 {
+    grid-area: quote2;
+    background-color: #DF1617;
 }
 
 @media (min-width: 600px) {
