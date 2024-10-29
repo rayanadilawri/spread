@@ -174,7 +174,7 @@ footer {
 
 
 
-@media screen and (min-width: 600px) {
+@media (min-width: 600px) {
     body {
         display: grid;
         grid-template-columns:100%;
@@ -188,12 +188,22 @@ footer {
         display:grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: auto;
-        grid-template-areas: 
-        "h1 h1 h1 h1 h1 h1 h1 h1 Cblack Cblack Cblack Cblack"
-        "h2 h2 h2 h2 h2 h2 h2 h2 h2 h2 h2 h2 h2 h2 h2 h2"
-        "body1 body1 body1 body1 body1 body1 body1 body1 quote1 quote1 quote1 quote1"
-        "body2 body2 body2 body2 body2 body2 body2 body2 quote2 quote2 quote2 quote2"
-        "body-yellow body-yellow body-yellow body-yellow body-yellow body-yellow body-yellow body-yellow body-yellow body-yellow body-yellow body-yellow";
+        }
+    .h1{
+        grid-column: 1 / span 6;
+        grid-row:1;
+    }
+    .black{
+        grid-column: 7 / span 6;
+        grid-row:1;
+    }
+    .h2{
+        grid-column: 1 / span 6;
+        grid-row:2;
+    }
+    .body1{
+        grid-column: 1 / span 6;
+        grid-row:3;
     }
 }
 
