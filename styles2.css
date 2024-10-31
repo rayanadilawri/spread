@@ -41,6 +41,11 @@ p {
 	font-style: normal;
 }
 
+p::selection {
+    color: blue;
+    background-color: #FFD301;
+  }  
+
 
 header {
     grid-area: header;
