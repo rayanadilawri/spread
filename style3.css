@@ -1,0 +1,221 @@
+body {
+    background-color:black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto ;
+    grid-template-areas: 
+    "header"
+    "article"
+}
+ article{
+    display:grid;
+    grid-template-columns:100%;
+    grid-template-rows:auto;
+    grid-template-areas: 
+    "h1"
+    "Cblack"
+    "h2"
+    "body1"
+    "body2"
+    "quote1"
+    "body3"
+    "body-yellow"
+    "quote2"
+    "body4"
+    "body5"
+    "quote3"
+    "quote4"
+    "quote5"
+    "body6"
+    "body7"
+    "body8"
+    "read-more"
+    "footer";
+    background-color: black;
+    gap: 5px;
+    margin: 5px;
+}
+
+blockquote, header, h1, h2, .ReadMore, footer {
+font-family: "Staatliches", sans-serif;
+font-weight: 400;
+font-style: normal;;
+}
+
+p {
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+header {
+    grid-area: header;
+}
+ul{
+    display:flex;
+    flex-direction:row;
+    padding:0px;
+    list-style-type:none;
+    margin:0px;
+    font-family: "Staatliches", sans-serif;
+}
+li{
+    padding:1rem;
+    font-family: "Staatliches", sans-serif;
+    font-size:1rem;
+
+}
+li:nth-child(1){
+    text-align:left;
+}
+li:nth-child(2){
+    border-left: black solid 2px;
+    border-right: black solid 2px;
+}
+li:nth-child(3){
+    text-align:right;
+    margin-right:0px;
+    justify-content:flex-end;
+    width: 100%;
+}
+
+.black {
+    grid-area: Cblack;
+    /* height: 6rem; */
+    background-color: black;
+}
+h1{
+    background-color:white;
+    grid-area:h1;
+}
+
+h2 {
+    gap: 5px;
+    grid-area: h2;
+}
+article{
+    grid-area:article;
+}
+
+section {
+    border: solid 3px black;
+    padding: 1rem;
+}
+
+section, div, header, h1, h2 {
+    background-color: white;
+    margin: 0;
+}
+
+blockquote {
+    margin: 0;
+    background-color: white;
+    font-size: 2rem;
+    border: solid 3px black;
+    padding: 1rem;
+}
+
+.quote1 {
+    grid-area: quote1;
+    background-color: #006AB3;
+}
+
+.quote2 {
+    grid-area: quote2;
+    background-color: #DF1617;
+}
+
+.body1 {
+    grid-area: body1;
+}
+
+.yellow {
+    grid-area: body-yellow;
+    background-color: #FFD301;
+}
+
+.body2 {
+    grid-area: body2;
+}
+
+.body4 {
+    grid-area: body4;
+}
+
+.quote3 {
+    grid-area: quote3;
+    background-color: #006AB3;
+}
+
+.quote4 {
+    grid-area: quote4;
+    background-color: #FFD301;
+}
+
+.quote5 {
+    grid-area: quote5;   
+}
+
+.body6 {
+    grid-area: body6;
+}
+
+.ReadMore {
+    grid-area: read-more;
+
+}
+
+footer {
+    grid-area: footer;
+    background-color: white;
+}
+
+
+
+@media (min-width: 600px) {
+    body {
+        display: grid;
+        grid-template-columns:100%;
+        grid-template-rows:auto auto;
+        grid-template-areas:
+        "header"
+        "article"
+    }
+
+    article{    
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        }
+    .h1{
+        grid-column: 1 / span 6;
+        grid-row:1;
+    }
+    .black{
+        grid-column: 7 / span 6;
+        grid-row:1;
+    }
+    .h2{
+        grid-column: 1 / span 6;
+        grid-row:2;
+    }
+    .body1{
+        grid-column: 1 / span 6;
+        grid-row:3;
+    }
+}
+
+      /*  "yellow yellow yellow yellow yellow body body body body body body body"
+        "quote2 quote2 quote2 quote2 quote2 body body body body body body body"
+        "red red red red red body body body body body body body"
+        "quote3 quote3 quote3 quote3 quote3 quote3 blank blank blank blank blank blank"
+        "blank blank blank blank blank blank quote4 quote4 quote4 quote4 quote4 quote4"
+        "quote5 quote5 quote5 quote5 quote5 quote5 blank blank blank blank blank blank"
+        "body body body body body body body blue blue blue blue"
+        "body body body body body body body blue blue blue blue"
+        "body body body body body body body blue blue blue blue"
+        "read-more read-more read-more read-more read-more read-more read-more read-more black black black black"
+        "footer1 footer1 footer1 footer1 footer1 footer2 footer2 footer2 footer2 footer3 footer3 footer3"; */
+
