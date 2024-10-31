@@ -2,12 +2,27 @@
     font-size: 16px;
 }
 body {
-    display:flex;
-    width:100%;
-
+    display: flex;
+    flex-direction:column;
+    width:100vw;
+    background-color: black;
+    margin:0px;
 }
+
 #desktop-down{
     display:none;
+}
+.mobile-show{
+    display: flex;
+    flex-direction:column;
+    gap:8px;
+    background-color:black;
+}
+.body2, .body4{
+    margin:0px;
+}
+.desktop-show{
+    display: none;
 }
 main{
     display:flex;
@@ -17,7 +32,7 @@ h1{
     font-size: 3rem;
 }
 h2 {
-    border-top: solid 4px black;
+   /* border-top: solid 4px black;*/ 
     height: content;
     padding-top:3rem;
     font-size: 2rem;
@@ -25,22 +40,45 @@ h2 {
 blockquote, header, h1, h2, .ReadMore, footer {
     font-family: "Staatliches", sans-serif;
     font-weight: 400;
-    font-style: normal;;
+    font-style: normal;
     }
 p {
     font-family: "Space Grotesk", sans-serif;
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
+    padding:8px;
 }
-.empty3{
-    display:none;
+.section3{
+    margin:8px;
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    background-color:black;
 }
+.section2A > .empty3, 
+.section3A > .empty3, 
+.section3B > .empty3, 
+.section3C > .empty3 {
+    display: none;
+}
+
+.section3A > .quote3, 
+.section3B > .quote5, 
+.section3C > .quote4 {
+    height: 100%; 
+    border: none;
+    width:100%;
+}
+.section3A, .section3B, .section3C {
+    margin:0px;
+}
+
 .black {
     /* grid-area: Cblack; */
     /* height: 6rem; */
     background-color: black;
-    width: 100%;
+    width: calc(100%-16px);
     height: 10vh;
     margin: 0;
 }
@@ -52,24 +90,53 @@ p {
         width: 100vw;
         height: 100vh;
     }
-    
+    .section2{
+        gap:8px;
+        background-color:black;
+    }
+    .section2a, .section2b{
+        margin:0px;
+        display:flex;
+        flex-direction:column;
+        gap:8px;
+        background-color:black;
+    }
+    .section2a > .empty3:nth-child(1){
+        background-color:white;
+    }
+    .body2:nth-child(1){
+        background-color: #FFD301;
+        margin:0px;
+    }
+    .body2:nth-child(2){
+        margin:0px;
+    }
+    .body2 p{
+        margin:0px;
+    }
     main {
         display: flex;
     }
-    .empty3{
-        display:block;
+    .mobile-show{
+        display: none;
     }
+    .desktop-show{
+        display: flex;
+    }
+    /* .empty3{
+        display:block;
+    } */
     .black {
         /* grid-area: Cblack; */
         /* height: 6rem; */
         background-color: black;
-        width: 100%;
+        width: calc(100%-16px);
         height: 40vh;
         margin: 0;
     }
 
     h2 {
-        border-top: solid 4px black;
+       /* border-top: solid 4px black;*/
         height: 30vh;
         padding-top:0px,
     }
@@ -78,7 +145,17 @@ p {
         display:flex;
         flex-direction:column;
     }
-    
+    .section2A > .empty3, 
+    .section3A > .empty3, 
+.section3B > .empty3, 
+.section3C > .empty3 {
+    display: block;
+    height:auto;
+    margin:0px;
+}
+.section2A > .empty3{
+    height:30vh;
+}
      /* article{
         display:grid;
         grid-template-columns:100%;
@@ -120,7 +197,7 @@ p {
     
     header {
         /* grid-area: header; */
-        width: 100vw;
+        /* width: 100vw; */
     }
     ul{
         display:flex;
@@ -147,7 +224,7 @@ p {
         text-align:right;
         margin-right:0px;
         justify-content:flex-end;
-        width: 100%;
+        width: calc(100%-16px);
     }
     
 
@@ -165,9 +242,9 @@ p {
     } */
     
     section {
-        border: solid 3px black;
+       /* border: solid 3px black;*/
         /* padding: 1rem; */
-        width: 100vw;
+        width: calc(100%-16px);
     }
     
     main section:first-child {
@@ -178,14 +255,14 @@ p {
     
     section, div, header, h1, h2 {
         background-color: white;
-        margin: 0;
+        margin:8px;
     }
     
     blockquote {
         margin: 0;
         background-color: white;
         font-size: 2rem;
-        border: solid 3px black;
+       /*: solid 3px black;*/
         padding: 1rem;
     }
     #mobile-black{
@@ -230,9 +307,9 @@ p {
         background-color: #FFD301;
     }
     
-    .quote5 {
+    /* .quote5 {
         grid-area: quote5;   
-    }
+    } */
     
     .body6 {
         grid-area: body6;
@@ -262,6 +339,7 @@ p {
     .section3 {
         display: flex;
         flex-direction: column;
+        margin:8px;
     }
     .section3 blockquote {
         height: 80vh;
@@ -272,15 +350,17 @@ p {
     .section3A, .section3B, .section3C {
         display: flex;
         flex-direction:row;
-        height: 80vh;
-    }
+        max-height: fit-content; 
+    margin:0px;  
+gap:8px;
+background-color:black; }
     
     .empty3 {
         display:block;
         background-color: red;
         height: 80vh;
         width: 50vw;
-        border: solid 4px black;
+       /*: solid 4px black;*/
     }
     
     footer {
