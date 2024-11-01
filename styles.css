@@ -116,6 +116,11 @@ footer {
         height: 100vh;
     }
 
+    p::selection {
+        color: blue;
+        background-color: #FFD301;
+      }
+      
     .mobile-show{
         display: none;
     }
