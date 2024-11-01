@@ -414,8 +414,9 @@ footer {
     .empty3, header, footer {
     display: none !important;
     }
-    blockquote, body {
-       font-size: 17px;
+
+    blockquote, body, p {
+       font-size: 12px;
     }
     
     section, blockquote, p, header {
@@ -427,7 +428,23 @@ footer {
     blockquote {
         padding: 20px;
         padding-bottom: -10px;
+        font-size: 20px;
+        text-align: center;
     }
+
+    h2 {
+        margin: -10px;
+        background-color: none;
+    }
+
+    h1 {
+        margin-top: -20px;
+    }
+
+    @page {
+        margin-bottom: 2cm;
+        margin-top: 2cm;
+      }
 
 
    /* h1 {
@@ -436,10 +453,7 @@ footer {
         margin top: -10px;
     }
 
-    h2 {
-        margin: -10px;
-        background-color: none;
-    }
+
 
     body, footer, blockquote, .quote1 {
         width:100%!important;
