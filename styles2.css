@@ -314,8 +314,14 @@ h1 {
         background-color: white;
         font-size: 2rem;
        /*: solid 3px black;*/
-        padding: 1rem;
+        padding: 3rem;
     }
+
+    body > section.section3 > section.section3B > blockquote {
+     
+        margin-bottom: 0;
+    }
+
 
     #mobile-black{
         display:none;
@@ -395,7 +401,7 @@ h1 {
     .section3 {
         display: flex;
         flex-direction: column;
-        margin:8px;
+        /*margin:8px;*/
     }
     .section3 blockquote {
         height: 80vh;
@@ -430,29 +436,43 @@ background-color:black; }
     
     }
 
-    /* article{    
-        display:grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "h1 h1 h1 h1 h1 h1 h1 h1 Cblack Cblack Cblack Cblack"
-        "h2 h2 h2 h2 h2 h2 h2 h2 h2 h2 h2 h2 h2 h2 h2 h2"
-        "body1 body1 body1 body1 body1 body1 body1 body1 quote1 quote1 quote1 quote1"
-        "body2 body2 body2 body2 body2 body2 body2 body2 quote2 quote2 quote2 quote2"
-        "body-yellow body-yellow body-yellow body-yellow body-yellow body-yellow body-yellow body-yellow body-yellow body-yellow body-yellow body-yellow";
-    } */
- 
+    @media print {
+    .empty3, header, footer {
+    display: none !important;
+    }
+    blockquote, body {
+       font-size: 17px;
+    }
+    
+    section, blockquote, p, header {
+        margin-bottom: -10px;
+        font-size: 17px;
+        padding: 10px;
+    }
 
-      /*  "yellow yellow yellow yellow yellow body body body body body body body"
-        "quote2 quote2 quote2 quote2 quote2 body body body body body body body"
-        "red red red red red body body body body body body body"
-        "quote3 quote3 quote3 quote3 quote3 quote3 blank blank blank blank blank blank"
-        "blank blank blank blank blank blank quote4 quote4 quote4 quote4 quote4 quote4"
-        "quote5 quote5 quote5 quote5 quote5 quote5 blank blank blank blank blank blank"
-        "body body body body body body body blue blue blue blue"
-        "body body body body body body body blue blue blue blue"
-        "body body body body body body body blue blue blue blue"
-        "read-more read-more read-more read-more read-more read-more read-more read-more black black black black"
-        "footer1 footer1 footer1 footer1 footer1 footer2 footer2 footer2 footer2 footer3 footer3 footer3"; */
+    h1 {
+        font-size: 50px;
+        margin-bottom: -10px;
+        margin top: -10px;
+    }
 
+    h2 {
+        margin: -10px;
+        background-color: none;
+    }
 
+    body, footer, blockquote, .quote1 {
+        width:100%!important;
+        padding:0!important;
+        margin:0!important;
+        box-sizing:border-box;
+        background-color: none;
+        line-height: 1.3;
+      }
+
+      @page {
+        margin: 1cm;
+      }
+
+}
+    
