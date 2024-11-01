@@ -147,45 +147,16 @@ p {
     }
     .section2A > .empty3, 
     .section3A > .empty3, 
-.section3B > .empty3, 
-.section3C > .empty3 {
+	.section3B > .empty3, 
+	.section3C > .empty3 {
     display: block;
     height:auto;
     margin:0px;
 }
-.section2A > .empty3{
+	.section2A > .empty3{
     height:30vh;
 }
-     /* article{
-        display:grid;
-        grid-template-columns:100%;
-        grid-template-rows:auto;
-        grid-template-areas: 
-        "h1"
-        "Cblack"
-        "h2"
-        "body1"
-        "body2"
-        "quote1"
-        "body3"
-        "body-yellow"
-        "quote2"
-        "body4"
-        "body5"
-        "quote3"
-        "quote4"
-        "quote5"
-        "body6"
-        "body7"
-        "body8"
-        "read-more"
-        "footer";
-        background-color: black;
-        gap: 5px;
-        margin: 5px;
-    } */
-    
-
+   
     
     
     /* 
@@ -312,14 +283,15 @@ p {
     } */
     
     .body6 {
-        grid-area: body6;
+       color: black;
+	   background-color: white;
     }
     
     .section4 {
         display: flex;
     }
     
-    .section4L {
+    .section4a {
         display: flex;
         flex-direction: column;}
     
@@ -327,6 +299,26 @@ p {
         width: 50%;
     } */
     
+	.section1 {
+        display: flex;
+        flex-direction: row;
+        margin:8px;
+    }
+    .section1 blockquote {
+        height: 80vh;
+        border: none;
+        width: 50vw;
+    }
+    
+    .section1A, .section1B,  {
+        display: flex;
+        flex-direction:column;
+        max-height: fit-content; 
+		margin:0px;  
+		gap:8px;
+		background-color:black; }
+   
+
     .section4R {
         height: 100%;
         background-color: #006AB3;
@@ -362,7 +354,36 @@ background-color:black; }
         width: 50vw;
        /*: solid 4px black;*/
     }
+
+/*: this is the copy*/
+	.section4 {
+        display: flex;
+        flex-direction: column;
+        margin:8px;
+    }
+    .section4 blockquote {
+        height: 80vh;
+        border: none;
+        width: 50vw;
+    }
     
+    .section4A, .section4B, .section4C {
+        display: flex;
+        flex-direction:row;
+        max-height: fit-content; 
+    margin:0px;  
+gap:8px;
+background-color:black; }
+    
+    .empty3 {
+        display:block;
+        background-color: red;
+        height: 80vh;
+        width: 50vw;
+       /*: solid 4px black;*/
+    }
+     /*: this is the copy*/
+
     footer {
         grid-area: footer;
         background-color: white;
